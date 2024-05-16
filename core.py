@@ -200,73 +200,7 @@ def start(job_txt,resume_txt):
     print(np.mean(sent_embed))
     print(np.mean(keyword_embed))
     print(np.mean(np.array([np.mean(word_embed),np.mean(sent_embed),np.mean(keyword_embed)])))
-    #with open('jd_embeddings.txt','w') as f:
-    #    f.write(str(jd_embeddings))
-    #with open('rc_embeddings.txt','w') as f:
-    #    f.write(str(rc_embeddings))
-    #with open('jd_keywords.txt','w') as f:
-    #    f.write(str(jd_keywords))
-    #with open('rc_keywords.txt','w') as f:
-    #    f.write(str(rc_keywords))
-def test():
-    a = '''Company: XYZ Corporation
-
-Location: Anytown, USA
-
-Job Type: Full-time
-
-We are seeking a highly analytical and detail-oriented Data Analyst to join our growing team at XYZ Corporation. The ideal candidate will be responsible for interpreting data, analyzing results, and providing insights to support business decisions. Key responsibilities include:
-
-Collecting and interpreting data from various sources, including databases, spreadsheets, and data warehouses.
-Analyzing complex datasets to identify trends, patterns, and correlations.
-Developing and implementing data analysis strategies to improve business processes and performance.
-Creating visualizations and reports to communicate findings to stakeholders.
-Collaborating with cross-functional teams to understand business requirements and provide data-driven solutions.
-Continuously monitoring data quality and integrity to ensure accuracy and reliability.
-Requirements:
-
-Bachelor's degree in Mathematics, Statistics, Computer Science, or related field.
-Proven experience working as a Data Analyst or in a similar role.
-Proficiency in SQL, Python, R, or other programming languages for data analysis.
-Strong analytical skills with the ability to collect, organize, analyze, and disseminate significant amounts of information with attention to detail and accuracy.
-Excellent communication and presentation skills.
-Ability to work independently and collaboratively in a fast-paced environment.
-If you are passionate about data analysis and want to make an impact in a dynamic organization, we encourage you to apply.'''
-    b = '''John Doe
-123 Main Street
-Anytown, USA 12345
-(555) 555-5555
-johndoe@example.com
-
-Objective:
-Detail-oriented and highly analytical Data Analyst with a Bachelor's degree in Statistics and over 5 years of experience in interpreting and analyzing complex datasets. Proficient in SQL, Python, and R, with a proven track record of providing valuable insights to support business decisions. Strong communication and collaboration skills, with the ability to work independently and in cross-functional teams.
-
-Education:
-Bachelor of Science in Statistics
-University of Anytown, Anytown, USA
-Graduated: May 2016
-
-Experience:
-Data Analyst
-ABC Analytics Inc., New York, NY
-January 2017 - Present
-
-Collected and interpreted data from various sources, including databases and spreadsheets.
-Analyzed complex datasets to identify trends, patterns, and correlations.
-Developed and implemented data analysis strategies to improve business processes and performance.
-Created visualizations and reports to communicate findings to stakeholders.
-Collaborated with cross-functional teams to understand business requirements and provide data-driven solutions.
-Monitored data quality and integrity to ensure accuracy and reliability.
-Skills:
-
-Proficient in SQL, Python, and R
-Strong analytical skills
-Excellent communication and presentation skills
-Detail-oriented and organized
-Ability to work independently and in cross-functional teams
-Certifications:
-
-Data Analysis Certification, XYZ Institute, 2018
-References:
-Available upon request.'''
+def test(a,b):
+    a = input('Enter the Job Description: ')
+    b = input('Enter the Resume/CV: ')
     start(a,b)
